@@ -35,7 +35,7 @@ append(String str): Appends the given string to the string builder.
 undo(): Undoes the last operation on the string builder.
 updateMembers():
 
-Testing
+# Testing
 The project includes a set of tests written using the JUnit 5 testing framework. These tests verify the correct behavior of the observer design pattern and the undo functionality in the GroupAdmin, ConcreteMember, and UndoableStringBuilder classes.
 
 The tests are located in the Tests class and are organized into the following methods:
