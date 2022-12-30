@@ -87,60 +87,46 @@ The tests are located in the Tests class and are organized into the following me
 
 In this UML diagram, the GroupAdmin class implements the Sender interface and the Member interface. The ConcreteMember class implements the Member interface. The GroupAdmin class maintains a list of ConcreteMember objects as observers. The UndoableStringBuilder class provides the implementation for the string builder operations in the Sender interface.
 
-            +-----------------------+
-            | GroupAdmin           |
-            +-----------------------+
-            | - observers: ArrayList[ConcreteMember] |
-            | + register()         |
-            | + unregister()       |
-            | + insert()           |
-            | + delete()           |
-            | + replace()          |
-            | + append()           |
-            | + undo()             |
-            | + Updatemembers()  |
-            +-----------------------+
-                  |        |
-                  |        |
-                  |        |
-            +-----------------------+
-            | ConcreteMember       |
-            +-----------------------+
-            | + update()           |
-            +-----------------------+
-                  |
-                  |
-                  |
-+---------------------------+
-| Member                   |
-+---------------------------+
-| + update()               |
-+---------------------------+
-                  |
-                  |
-                  |
-+---------------------------+
-| Sender                  |
-+---------------------------+
-| + insert()              |
-| + delete()              |
-| + replace()             |
-| + append()              |
-| + undo ()               |
-|                         |
-+---------------------------+
-                  |
-                  |
-                  |
-+---------------------------+
-| UndoableStringBuilder   |
-+---------------------------+
-| + insert()              |
-| + delete()              |
-| + replace()             |
-| + append()              |
-| + undo()                |
-+---------------------------+
+                                 +-------------------+
+                             |     GroupAdmin    |
+                             +-------------------+
+                             | - observers:      |
+                             |   List<Member>    |
+                             | - stringBuilder:  |
+                             |   UndoableStringBuilder |
+                             +-------------------+
+                             | + register(       |
+                             |   Member member)  |
+                             | + unregister(     |
+                             |   Member member)  |
+                             | + insert(int,     |
+                             |   String)         |
+                             | + delete(int,     |
+                             |   int)            |
+                             | + replace(int,    |
+                             |   int, String)    |
+                             | + append(String)   |
+                             | + undo()          |
+                             | + notifyObservers()|
+                             +-------------------+
+                                       |
+                                       | implements
+                                       |
+                        +---------------+---------------+
+                        |  + update(Subject)              |
+                        |                                  |
+               +-------------------+                  +-------------------+
+               |  ConcreteMember   |                  |       Sender       |
+               +-------------------+                  +-------------------+
+                                       |
+                                       | implements
+                                       |
+                               +-------------------+
+                               |       Member      |
+                               +-------------------+
+                               | + update(Subject) |
+                               +-------------------+
+
 
 
 # Contact Information
