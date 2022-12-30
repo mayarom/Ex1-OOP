@@ -146,7 +146,9 @@ In this UML diagram, the GroupAdmin class implements the Sender interface and th
 # Contributions
 The Ex1 - observer undoablestringbuilder program was created by Avichai Mizrahi and Maya Rom.
 
-# License
-The Ex1 - observer undoablestringbuilder program is licensed under the MIT License.
+# Contact Information
+- Maya Rom - maya5660@gmail.com
+- Avichai Mizrahi - avichaim@gmail.com
+We are happy to answer any questions or provide additional information about the Ex1 - observer undoablestringbuilder project. Please don't hesitate to contact us via email if you have any questions or feedback.
 
 
