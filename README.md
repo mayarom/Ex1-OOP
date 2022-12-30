@@ -2,7 +2,7 @@
 
 # Introduction
 
-This project is a Java implementation of an observer design pattern using an undoable string builder. The observer design pattern allows objects (i.e., observers) to register for and receive notifications from a subject when the subject's state changes. In this project, the GroupAdmin class represents the subject and the ConcreteMember class represents the observers. The UndoableStringBuilder class is a wrapper class for the Java StringBuilder class that adds undo functionality.
+The Ex1 - observer undoablestringbuilder program, created by Avichai Mizrahi and Maya Rom, is a Java program that implements an observer design pattern using an undoable string builder. The goal of the program is to allow a group administrator to modify a string builder and notify a group of members of the current state of the string builder, with the ability to undo the last operation on the string builder.
 
 # Interfaces
 The project includes the following interfaces:
@@ -141,5 +141,12 @@ In this UML diagram, the GroupAdmin class implements the Sender interface and th
 | + append()              |
 | + undo()                |
 +---------------------------+
+
+
+# Contributions
+The Ex1 - observer undoablestringbuilder program was created by Avichai Mizrahi and Maya Rom.
+
+# License
+The Ex1 - observer undoablestringbuilder program is licensed under the MIT License.
 
 
