@@ -10,7 +10,7 @@ The UndoableStringBuilder class has methods for inserting, deleting, replacing, 
 
 To test the code, you can run the GroupAdminTest class, which performs a series of operations on the string builder and verifies the correct behavior of the observer design pattern and the undo functionality.
 
-Member
+#Member
 The Member interface has the following method:
 
 update(String str): Receives an update from the subject.
@@ -19,7 +19,8 @@ The ConcreteMember class is a concrete implementation of the Member interface. I
 
 ConcreteMember(): Constructs a new ConcreteMember object.
 update(String str): Receives an update from the subject and prints the current state of the string builder to the console.
-GroupAdmin
+
+#GroupAdmin
 The GroupAdmin class has the following methods:
 
 GroupAdmin(): Constructs a new GroupAdmin object with an empty string builder.
