@@ -21,8 +21,8 @@ The Sender interface is implemented by the GroupAdmin class and defines the meth
 - append(String obj): Appends the given string to the string builder.
 - delete(int start, int end): Deletes the characters from the given start index to the given end index in the string builder.
 - undo(): Undoes the last operation on the string builder.
-- 
-# Concrete Classes
+
+# Classes
 
 # ConcreteMember
 The ConcreteMember class is a concrete implementation of the Member interface. It has the following fields and methods:
