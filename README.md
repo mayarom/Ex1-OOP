@@ -98,7 +98,7 @@ In this UML diagram, the GroupAdmin class implements the Sender interface and th
             | + replace()          |
             | + append()           |
             | + undo()             |
-            | + notifyObservers()  |
+            | + Updatemembers()  |
             +-----------------------+
                   |        |
                   |        |
@@ -126,6 +126,8 @@ In this UML diagram, the GroupAdmin class implements the Sender interface and th
 | + delete()              |
 | + replace()             |
 | + append()              |
+| + undo ()               |
+|                         |
 +---------------------------+
                   |
                   |
@@ -139,6 +141,5 @@ In this UML diagram, the GroupAdmin class implements the Sender interface and th
 | + append()              |
 | + undo()                |
 +---------------------------+
-
 
 
