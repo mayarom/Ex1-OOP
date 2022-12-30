@@ -123,7 +123,7 @@ In this UML diagram, the GroupAdmin class implements the Sender interface and th
 # Run
 To run our project- you must have JDK and Maven installed (in your IDE).
 
-click this command:https://github.com/mayarom/Ex1-OOP.git
+click this command: https://github.com/mayarom/Ex1-OOP.git
  
 Then, open the project via IntelliJ and select build -> Rebuild project.
 Let the project be rebuilt, and then you can run the Tests.java class to see the functionality of the project.
