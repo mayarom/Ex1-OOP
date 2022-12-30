@@ -1,5 +1,5 @@
-# Ex1-OOP
-EX1 Observer UndoableStringBuilder
+# EX1 Observer UndoableStringBuilder
+
 This project is a Java implementation of an observer design pattern using an undoable string builder. The observer design pattern allows objects (i.e., observers) to register for and receive notifications from a subject when the subject's state changes. In this project, the GroupAdmin class represents the subject and the ConcreteMember class represents the observers. The UndoableStringBuilder class is a wrapper class for the Java StringBuilder class that adds undo functionality.
 
 The GroupAdmin class has methods for registering and unregistering observers, performing operations on the string builder (e.g., inserting, deleting, replacing, and appending strings), and undoing the last operation on the string builder. It also has a method for notifying all registered observers of the current state of the string builder.
@@ -10,7 +10,8 @@ The UndoableStringBuilder class has methods for inserting, deleting, replacing, 
 
 To test the code, you can run the GroupAdminTest class, which performs a series of operations on the string builder and verifies the correct behavior of the observer design pattern and the undo functionality.
 
-#Member
+# Member
+
 The Member interface has the following method:
 
 update(String str): Receives an update from the subject.
@@ -20,7 +21,7 @@ The ConcreteMember class is a concrete implementation of the Member interface. I
 ConcreteMember(): Constructs a new ConcreteMember object.
 update(String str): Receives an update from the subject and prints the current state of the string builder to the console.
 
-#GroupAdmin
+# GroupAdmin
 The GroupAdmin class has the following methods:
 
 GroupAdmin(): Constructs a new GroupAdmin object with an empty string builder.
@@ -33,3 +34,15 @@ replace(int start, int end, String str): Replaces the characters from the given 
 append(String str): Appends the given string to the string builder.
 undo(): Undoes the last operation on the string builder.
 updateMembers():
+
+Testing
+The project includes a set of tests written using the JUnit 5 testing framework. These tests verify the correct behavior of the observer design pattern and the undo functionality in the GroupAdmin, ConcreteMember, and UndoableStringBuilder classes.
+
+The tests are located in the Tests class and are organized into the following methods:
+
+register(): Tests the register method in the GroupAdmin class by adding a new member to the group and verifying that the member was added successfully.
+unregister(): Tests the unregister method in the GroupAdmin class by removing a member from the group and verifying that the member was removed successfully.
+insert(): Tests the insert method in the GroupAdmin class by inserting a string at a specified index in the string builder and verifying that the insert was successful.
+append(): Tests the append method in the GroupAdmin class by appending a string to the end of the string builder and verifying that the append was successful.
+delete(): Tests the delete method in the GroupAdmin class by deleting a range of characters from the string builder and verifying that the delete was successful.
+undo(): Tests the undo method in the GroupAdmin class by performing a series of operations on the string builder and undoing the last operation.
