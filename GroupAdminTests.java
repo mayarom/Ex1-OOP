@@ -8,7 +8,7 @@ import org.junit.platform.commons.logging.LoggerFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class Tests {
+class GroupAdminTests {
 
     GroupAdmin lord;
     GroupAdmin dror;
