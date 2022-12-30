@@ -83,3 +83,62 @@ The tests are located in the Tests class and are organized into the following me
 - delete(): Tests the delete method in the GroupAdmin class by deleting a range of characters from the string builder and verifying that the delete was successful.
 - undo(): Tests the undo method in the GroupAdmin class by performing a series of operations on the string builder and undoing the last operation.
 
+# UML Diagram
+
+In this UML diagram, the GroupAdmin class implements the Sender interface and the Member interface. The ConcreteMember class implements the Member interface. The GroupAdmin class maintains a list of ConcreteMember objects as observers. The UndoableStringBuilder class provides the implementation for the string builder operations in the Sender interface.
+
+            +-----------------------+
+            | GroupAdmin           |
+            +-----------------------+
+            | - observers: ArrayList[ConcreteMember] |
+            | + register()         |
+            | + unregister()       |
+            | + insert()           |
+            | + delete()           |
+            | + replace()          |
+            | + append()           |
+            | + undo()             |
+            | + notifyObservers()  |
+            +-----------------------+
+                  |        |
+                  |        |
+                  |        |
+            +-----------------------+
+            | ConcreteMember       |
+            +-----------------------+
+            | + update()           |
+            +-----------------------+
+                  |
+                  |
+                  |
++---------------------------+
+| Member                   |
++---------------------------+
+| + update()               |
++---------------------------+
+                  |
+                  |
+                  |
++---------------------------+
+| Sender                  |
++---------------------------+
+| + insert()              |
+| + delete()              |
+| + replace()             |
+| + append()              |
++---------------------------+
+                  |
+                  |
+                  |
++---------------------------+
+| UndoableStringBuilder   |
++---------------------------+
+| + insert()              |
+| + delete()              |
+| + replace()             |
+| + append()              |
+| + undo()                |
++---------------------------+
+
+
+
