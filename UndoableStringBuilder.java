@@ -6,7 +6,7 @@ import java.util.Stack;
  / * StringBuilder class with support for the undo operation by a stack that stores the change history
  / * @maya rom 207485251
  / * @avichai mizrahi 208465872
- / * @1.0
+ / * @2.0
  / */
 
 
@@ -141,34 +141,6 @@ public class UndoableStringBuilder {
     }
 
 
-    public static void main(String[] args) {
-        UndoableStringBuilder _str = new UndoableStringBuilder("abcd");
-        System.out.println("start: " + _str);
-        _str.reverse();
-        System.out.println("reverse:  " + _str);
-        _str.append("efgh");
-        System.out.println("append efgh:  " + _str);
-        _str.undo();
-        System.out.println("undo:  " + _str);
-        _str.append(null);
-        System.out.println(_str);
-        _str.undo();
-        System.out.println(_str);
-        _str.replace(2, 7, "hey");
-        System.out.println(_str);
-        _str.replace(6, 4, "hey");
-        System.out.println(_str);
-        _str.undo();
-        System.out.println(_str);
-        _str.reverse();
-        System.out.println(_str);
-        _str.append("maya\nrom");
-        System.out.println(_str);
-        _str.reverse();
-        System.out.println(_str);
-
-
-    }
 }
 
 
