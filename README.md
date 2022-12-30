@@ -42,7 +42,7 @@ Fields:
 - undoableStringBuilder: An instance of the UndoableStringBuilder class that represents the string builder for the GroupAdmin object.
 - members: A list of the members that are registered to the GroupAdmin object.
 
-Methods:
+Main&important methods:
 
 - GroupAdmin(): Constructs a new GroupAdmin object with an empty string builder.
 - GroupAdmin(String str): Constructs a new GroupAdmin object with a string builder initialized with the given string.
@@ -53,6 +53,7 @@ Methods:
 - replace(int start, int end, String str): Replaces the characters from the given start index to the given end index with the given string in the string builder.
 - append(String str): Appends the given string to the string builder.
 - undo(): Undoes the last operation on the string builder.
+-  UpdateMembers(): update the member kisr to the new string.
 
 # Other Classes
 # UndoableStringBuilder
@@ -60,7 +61,7 @@ Methods:
 The UndoableStringBuilder class is a wrapper class for the Java StringBuilder class that adds undo functionality. 
 The UndoableStringBuilder class has methods for inserting, deleting, replacing, and appending strings to the string builder, as well as a method for undoing the last operation on the string builder.
 
-# Testing
+# Testing - JVM & JUNIT
 
 To test the code, you can run the GroupAdminTest class, which performs a series of operations on the string builder and verifies the correct behavior of the observer design pattern and the undo functionality.
 
